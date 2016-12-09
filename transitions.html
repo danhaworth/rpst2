@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Transitions</title>
+<style>
+body {
+	background-color: #EEEEEE;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	display: block;
+	font-size: 0;
+	text-align: center;
+}
+.box {
+	width: 200px;
+	height: 50px;
+	border: 2px #000 solid;
+	border-radius: 5px;
+	margin: 25px;
+	padding: 5px;
+	font-size: 16px;
+	text-align: center;
+	display: inline-block
+}
+#xform0 {
+
+}
+#xform1:hover {
+	transform: translate(-100px, -50px);
+}
+#xform2:hover {
+	transform: rotate(45deg);
+}
+#xform3:hover {
+	transform: scale(2, 2);
+}
+#xform4:hover {
+	transform: skew(0deg, 20deg);
+}
+p {
+	font-family: Arial, Verdana, Tahoma, "sans-serif";
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="box" id="xform0">
+<p>Box</p>
+</div>
+<div class="box" id="xform1">
+<p>I am translated</p>
+</div>
+<div class="box" id="xform2">
+<p>I am rotated</p>
+</div>
+<div class="box" id="xform3">
+<p>I am scaled</p>
+</div>
+<div class="box" id="xform4">
+<p>I am skewed</p>
+</div>
+</div>
+</body>
+</html>
