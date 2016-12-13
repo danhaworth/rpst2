@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Fixed Positioning</title>
+	<meta charset="utf-8">
+	<title>Fixed Positioning</title>
 <style type="text/css">
 div {
 	-webkit-box-sizing: border-box;
@@ -77,12 +77,28 @@ p {
 	font-size: 14px;
 	margin-bottom: 50px;
 }
+
+@media screen and (max-width: 600px){   /* width for screen less than 600px */
+	.box{
+		text-align: left;
+		background-color: #EEEEEE;
+		border-color: #FFFFFF;
+	}
+}
+
+@media screen and (min-width: 1000px){   /* width for screen over 1000px */
+	.box{
+		color: #FFFFFF;
+		border-color: #FFFFFF;
+	}
+}
+
 </style>
 </head>
 <body>
 <div id="container">
 <div class="box" id="header"><h1>Header</h1></div>
-<div class="sidebar">
+<div class="box sidebar">
 	<h2>Sidebar</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -97,7 +113,7 @@ p {
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div class="content">
+<div class="box content">
 	<h2>Content</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -112,7 +128,7 @@ p {
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div class="sidebar">
+<div class="box sidebar">
 	<h2>Sidebar</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -127,7 +143,7 @@ p {
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div class="content">
+<div class="box content">
 	<h2>Content</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
