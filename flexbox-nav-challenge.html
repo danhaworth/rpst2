@@ -14,7 +14,7 @@
 			height: 500px;
 			display: flex;
 			flex-direction: column;
-			align-items:stretch;
+			align-items: stretch;
 			border-radius: 10px;
 			padding: 0;	
 		}
@@ -25,7 +25,7 @@
 			flex:1;
 			height: 30px;
 			font-family: Dosis;
-			padding:20px 20px 20px 20px;
+			padding: 20px;
 			text-align: center;
 			font-size: 2em;
 			border-bottom: 1px solid #fff;
@@ -33,7 +33,12 @@
 
 		h2{
 			font-family: Dosis;
-			font-size: 4em;
+			font-size: 2em;
+		}
+
+		p{
+			font-family: Dosis;
+			font-size: 1em;
 		}
 
 		body{
@@ -66,6 +71,37 @@
 			width: 100%;
 		}
 
+		#graphic img{
+			width: 100%;
+		}
+
+		.cards{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-around;
+		}
+
+		.card{
+			flex: 1;
+			background-color: #ddd;
+			margin: 50px 20px;
+			padding: 20px;
+		}
+
+		.card img{
+			width: 100%;
+		}
+
+		.card p{
+			font-family: 'Dosis';
+			font-size: 22px;
+		}
+
+		.card h2{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
 		@media screen and (min-width: 700px){
 			nav{
 				flex-flow: row;
@@ -75,6 +111,18 @@
 			a{
 				font-size: 1.3em;
 				border: none;
+			}
+			body{
+				padding: 10px;
+			}
+			.cards{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: flex-start;
+				align-content: space-between;
+			}
+			.card img{
+				width: 416px;
 			}
 			#logoNav{
 				flex: 6;
@@ -115,6 +163,32 @@
 			</div>
 			<div id="graphic">
 				<img src="img/laptop.png" alt="Image of a laptop">
+			</div>
+		</div>
+		<section class="cards">
+			<div class="card">
+				<img src="img/graphic1.png" alt="design pic">
+				<h2>Heading 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class="card">
+				<img src="img/graphic2.png" alt="design pic">
+				<h2>Heading 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class="card">
+				<img src="img/graphic3.png" alt="design pic">
+				<h2>Heading 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
 			</div>
 		</section>
 	</content>
