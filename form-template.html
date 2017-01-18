@@ -66,16 +66,33 @@
          <form id="form1">
             <fieldset>
             <legend>Registration</legend>
-            <label class="field" for="fname">First Name:</label>
+            <label class="field" for="fname">First Name*:</label>
             <input type="text" id="fname" name="fname" placeholder="Your first name" required />
-            <label class="field" for="email">E-mail:</label>
+
+            <label class="field" for="email">E-mail*:</label>
             <input type="email" id="email" name="email" placeholder="Your e-mail address" required autofocus />
+
+            <label class="field" for="age">Age*:</label>
+            <input type="number" id="age" name="age" min="0" max="120" placeholder="Your age in years" required />
+
             <label class="field" for="tel">Telephone:</label>
-            <input type="tel" id="tel" name="tel" placeholder="Your telephone number" />
+            <input type="tel" id="tel" name="tel" pattern="07[0-9]{9}" placeholder="Your mobile telephone number" title="Enter your mobile phone number (starting 07, max 11 digits)" />
+
+            <label class="field" for="passportno">Passport no:</label>
+            <input name="passportno" id="passportno" type="text" pattern="[0-9]{9}" placeholder="Your passport number" title="Enter your passport number (9 digits)" />
+
             <label class="field" for="website">Website:</label>
             <input type="url" id="website" name="website" placeholder="Your website address (if applicable)" />
-            <label class="field" for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Password" />
+
+            <label class="field" for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" pattern="[A-Za-z]{1,2}[0-9]{1}[A-Za-z0-9]?[0-9]{1}[A-Za-z]{2}" placeholder="Your postcode" title="Enter your postcode (no spaces)" />
+
+            <label class="field" for="cardno">Credit card:</label>
+            <input type="number" id="cardno" name="cardno" pattern="[0-9]{16}" placeholder="Your credit card number" title="Enter your credit card number (no spaces)" />
+
+            <label class="field" for="password">Password*:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required />
+
             <input type="submit" value="submit"/>
             </fieldset>
          </form>
