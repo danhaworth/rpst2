@@ -10,13 +10,13 @@
       -->
       <style type="text/css">
 
-      body{
-         font-family: 'Roboto', sans-serif;
-      }
+         body{
+            font-family: 'Roboto', sans-serif;
+         }
+
          #container{
             width: 550px;
             margin: auto;
-
          }
 
          legend{
@@ -32,15 +32,52 @@
             text-align: right;
             width: 100px;
             float: left;
-
          }
+
+         .field{
+            padding: 6px 8px;
+         }
+
+         label.smallfield{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+         }
+
+         .smallfield{
+            padding: 2px 8px;
+         }
+
+         label.bigfield{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+         }
+
+         .bigfield{
+            padding-top: 30px;
+            padding-bottom: 25px;
+         }
+
+         select#starsign{
+            margin-top: 2px;
+            margin-bottom: 2px;
+         }
+
          input{
             width: 200px;
             border-radius: 5px;
             padding: 6px 8px;
          }
-         .field{
-            padding: 6px 8px;
+
+         input.multichoice{
+            width: 50px;
+         }
+
+         .box{
+            padding: 6px 10px;
          }
 
          #currency{
@@ -50,15 +87,15 @@
          }
 
          fieldset{
-            width: 450px;
+            width: 400px;
             border: 1px solid #999;
             border-radius: 20px;
             clear: both;
             padding: 20px;
             margin-bottom: 100px;
             background-color:rgba(129, 187, 201,.2);
-
          }
+
       </style>
    </head>
    <body>
@@ -72,8 +109,32 @@
             <label class="field" for="email">E-mail*:</label>
             <input type="email" id="email" name="email" placeholder="Your e-mail address" required autofocus />
 
+            <label class="field" for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob" required />
+
+            <label class="smallfield" for="starsign">Star sign:</label>
+            <select id="starsign">
+               <option value="aries">Aries (21 Mar - 19 Apr)</option>
+               <option value="taurus">Taurus (20 Apr - 20 May)</option>
+               <option value="gemini">Gemini (21 May - 20 Jun)</option>
+               <option value="cancer">Cancer (21 Jun - 22 Jul)</option>
+               <option value="leo">Leo (23 Jul - 22 Aug)</option>
+               <option value="virgo">Virgo (23 Aug - 22 Sep)</option>
+               <option value="libra">Libra (23 Sep - 22 Oct)</option>
+               <option value="scorpio">Scorpio (23 Oct - 21 Nov)</option>
+               <option value="sagittarius">Sagittarius (22 Nov - 21 Dec)</option>
+               <option value="capricorn">Capricorn (22 Dec - 19 Jan)</option>
+               <option value="aquarius">Aquarius (20 Jan - 18 Feb)</option>
+               <option value="pisces">Pisces (19 Feb - 20 Mar)</option>
+            </select>
+
             <label class="field" for="age">Age*:</label>
             <input type="number" id="age" name="age" min="0" max="120" placeholder="Your age in years" required />
+
+            <label class="bigfield">Gender:</label>
+            <div class="box"><input class="multichoice" type="radio" name="gender" value="male"/>Male</div>
+            <div class="box"><input class="multichoice" type="radio" name="gender" value="female"/>Female</div>
+            <div class="box"><input class="multichoice" type="radio" name="gender" value="other"/>Other/Unspecified</div>
 
             <label class="field" for="tel">Telephone:</label>
             <input type="tel" id="tel" name="tel" pattern="07[0-9]{9}" placeholder="Your mobile telephone number" title="Enter your mobile phone number (starting 07, max 11 digits)" />
@@ -82,13 +143,34 @@
             <input name="passportno" id="passportno" type="text" pattern="[0-9]{9}" placeholder="Your passport number" title="Enter your passport number (9 digits)" />
 
             <label class="field" for="website">Website:</label>
-            <input type="url" id="website" name="website" placeholder="Your website address (if applicable)" />
+            <input type="url" name="website" id="website" placeholder="Your website address (if applicable)" />
+
+            <label class="field" for="genre">Fav genre:</label>
+            <input list="genres" id="genre" name="genres" placeholder="Your favourite genre of music">
+               <datalist id="genres">
+                  <option value="Rock">
+                  <option value="Pop">
+                  <option value="Metal">
+                  <option value="Dance">
+                  <option value="Rap">
+                  <option value="R&B">
+                  <option value="Jazz">
+                  <option value="Classical">
+               </datalist>
+
+            <label class="field" for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="11">
 
             <label class="field" for="postcode">Postcode:</label>
             <input type="text" id="postcode" name="postcode" pattern="[A-Za-z]{1,2}[0-9]{1}[A-Za-z0-9]?[0-9]{1}[A-Za-z]{2}" placeholder="Your postcode" title="Enter your postcode (no spaces)" />
 
+            <label class="bigfield">Would you like:</label>
+            <div class="box"><input class="multichoice" type="checkbox" name="course" value="starter"/>Starter</div>
+            <div class="box"><input class="multichoice" type="checkbox" name="course" value="main"/>Main</div>
+            <div class="box"><input class="multichoice" type="checkbox" name="course" value="dessert"/>Dessert</div>
+
             <label class="field" for="cardno">Credit card:</label>
-            <input type="number" id="cardno" name="cardno" pattern="[0-9]{16}" placeholder="Your credit card number" title="Enter your credit card number (no spaces)" />
+            <input type="text" id="cardno" name="cardno" pattern="[0-9]{16}" placeholder="Your credit card number" title="Enter your credit card number (no spaces)" />
 
             <label class="field" for="password">Password*:</label>
             <input type="password" id="password" name="password" placeholder="Password" required />
@@ -98,5 +180,4 @@
          </form>
     </div>
    </body>
-
 </html>
