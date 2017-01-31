@@ -2,98 +2,56 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Basic Bootstrap</title>
+	<title>Bootstrap Components</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 </head>
 <body>
-<h1>Hello, this is Bootstrap</h1>
 
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4">
 			<h2>HTML</h2>
 			<p>HTML is a major Web technology that defines the structure of a webpage. If you're looking to build websites, you should know about HTML.</p>
+			<a href="#" class="btn btn-success btn-lg">Learn</a>
 		</div>
 		<div class="col-sm-4">
 			<h2>CSS</h2>
 			<p>Cascading Style Sheets, most of the time abbreviated as CSS, is a stylesheet language used to describe the presentation of a document written in HTML.</p>
+			<a href="#" class="btn btn-primary btn-default">Learn</a>
 		</div>
 		<div class="col-sm-4">
 			<h2>Bootstrap</h2>
 			<p>Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+			<a href="#" class="btn btn-danger btn-sm">Learn</a>
 		</div>
 	</div>
 	<hr />
-	<div class="row">
-		<div class="col-sm-3">
-			<h2>JavaScript</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="col-sm-3">
-			<h2>Python</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="col-sm-3">
-			<h2>Django</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="col-sm-3">
-			<h2>GitHub</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-	</div>
-	<hr />
-	<div class="row">
-		<div class="col-sm-6">
-			<h2>SQL</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="col-sm-6">
-			<h2>FTP</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-	</div>
-	<hr />
-	<div class="row">
-		<div class="col-sm-12">
-			<h2>Full-Stack Development</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
+	<!--create a list group-->
+	<div class="list-group">
+		<a href="#" class="list-group-item">
+			<!--add glyph-->
+			<span class="glyphicon glyphicon-star-empty"></span> Stars
+			<!--add badge-->
+			<span class="badge">145</span>
+		</a>
+		<a href="#" class="list-group-item active">
+			<!--add glyph-->
+			<span class="glyphicon glyphicon-music"></span> Songs
+			<!--add badge-->
+			<span class="badge">145</span>
+		</a>
+		<a href="#" class="list-group-item">
+			<!--add glyph-->
+			<span class="glyphicon glyphicon-camera"></span> Photos
+			<!--add badge-->
+			<span class="badge">145</span>
+		</a>
+		<a href="#" class="list-group-item ">
+			<!--add glyph-->
+			<span class="glyphicon glyphicon-comment"></span> Comments
+			<!--add badge-->
+			<span class="badge">145</span>
+		</a>
 	</div>
 </div>
 
